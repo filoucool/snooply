@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Disable scrolling */
+  }
+
+  .container {
+    background-image: url('snooply2.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+  .title {
+    font-size: 6vw;
+    font-weight: bold;
+    position: absolute;
+    right: 10vw;
+    top: 40vh;
+    transform: translateY(-50%);
+  }
+
+  .coming-soon {
+    position: absolute;
+    right: 12vw;
+    bottom: 0vh;
+    transform: translateY(-50%);
+    font-size: 3vw;
+    font-weight: bold;
+    background: linear-gradient(45deg, #949bea, #838be0, #838be0, #838be0, #7d85d5, #838be0, #838be0, #838be0, #838be0, #949bea);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 10s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
